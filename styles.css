@@ -1,0 +1,293 @@
+/* small cards styles */
+
+.box {
+    background-color: #000;
+    font-family: 'Lobster', sans-serif;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.box>img {
+    width: 100%;
+    height: 400px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover>img {
+    opacity: 0.5;
+    filter: blur(5px);
+    transform: scale(1.05);
+}
+
+.box .box-content {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+}
+
+.box .box-content .overlay-img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.box .box-content .overlay-img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(80%);
+    transition: all 0.3s ease 0.1s;
+}
+
+.box:hover .box-content .overlay-img img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box .box-content .inner-content {
+    background-color: #000;
+    padding: 10px 15px;
+    opacity: 0;
+    transform: scaleY(1.5);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.box:hover .box-content .inner-content {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.box .title {
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.box .post {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width:990px) {
+    .box {
+        margin: 0 0 30px;
+    }
+}
+
+
+/* small cards styles */
+
+
+/* backend UI main background designs */
+
+.backend-main-background {
+    background-color: #000F45
+}
+
+.backend-main-content-background {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+}
+
+.backend-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EAE1E5;
+}
+
+.backend-input-fields {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    border-color: rgb(255, 196, 1);
+    color: #EAE1E5;
+}
+
+.adHomeHeadings {
+    color: #EAE1E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.admin-home-table-content {
+    color: #EAE1E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.tableContent-mName:hover {
+    color: rgb(236, 233, 11);
+    transition-duration: 0.5s;
+}
+
+.backend-all-movies-header {
+    color: #000F45;
+}
+
+.backend-all-movies-header-background {
+    background-color: rgb(255, 196, 1);
+    border-radius: 5px;
+}
+
+.backend-movie-name {
+    color: #EAE1E5;
+}
+
+.all-user-table-content {
+    color: #EAE1E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+/* backend UI main background designs */
+
+
+/* movie details page styles */
+
+.movieTrailor {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.mdf {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+/* movie details page styles */
+
+
+/* all movies page styles */
+
+.allMov {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.40);
+    /* background: rgb(16, 9, 121);
+    background: linear-gradient(216deg, rgba(16, 9, 121, 1) 10%, rgba(34, 32, 116, 1) 100%); */
+}
+
+
+/* all movies page styles */
+
+
+/* bookings page */
+
+.text-styles {
+    font-size: 20px;
+    color: #EAE1E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.square {
+    height: 25px;
+    width: 25px;
+    background-color: #860f3c;
+}
+
+.seat-booked {
+    background-color: #ff9900;
+}
+
+.small-text-styles {
+    font-size: 15px;
+    color: #EAE1E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* bookings page */
+
+
+/* add movie page and update movie page */
+
+.sa {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #EAE1E5;
+}
+
+.sb {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    border-color: rgb(255, 196, 1);
+    color: #EAE1E5;
+}
+
+
+/* add movie page and update movie page */
+
+
+/* add staff member page */
+
+.asm {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    border-color: rgb(255, 196, 1);
+    color: #EAE1E5;
+}
+
+.sac {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EAE1E5;
+}
+
+
+/* add staff member page */
+
+
+/* admin home page */
+
+
+/* admin home page */
+
+
+/* customer registration page */
+
+.front-main-background {
+    background-color: #000F45
+}
+
+.front-main-content-background {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+}
+
+.front-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EAE1E5;
+}
+
+.front-input-fields {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    border-color: rgb(255, 196, 1);
+    color: #EAE1E5;
+}
+
+.front-main-background-centered {
+    background-color: #000F45;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* customer registration page */
